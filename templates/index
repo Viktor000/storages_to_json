@@ -1,0 +1,15 @@
+Template, Hostname, Vendor, Command
+VNX_drive.template, .*, EMC, getdisk
+VNX_lun.template, .*, EMC, lun -list -all
+VNX_psu.template, .*, EMC, getresume -ps
+VNX_shelfs.template, .*, EMC, getresume -mp
+VNX_controller.template, .*, EMC, getresume -sp
+NETAPP_drive.template, .*, NetApp, storage disk show -fields.*
+NETAPP_lun.template, .*, NetApp, lun show -fields.*
+NETAPP_volume.template, .*, NetApp, volume show -fields vserver.volume.aggregate.size.state.used.junction-path.files.security-style
+NETAPP_network.template, .*, NetApp, network interface show -fields.* -data-protocol.*
+NETAPP_shelfs.template, .*, NetApp, storage shelf show -fields serial-number.product-id.shelf-id
+NETAPP_psu.template, .*, NetApp, storage shelf show -fields psu-serial-number.psu-part-number.psu-type.shelf-id
+NETAPP_controller.template, .*, NetApp, system controller show -fields serial-number.part-number.model.system-id
+NETAPP_ram.template, .*, NetApp, system controller memory dimm show -fields serial.part-no.node
+NETAPP_bootmedia.template, .*, NetApp, system controller bootmedia show -fields node.serial-num.unique-name

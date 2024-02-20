@@ -1,0 +1,11 @@
+Value vserver (\S+)
+Value path (\S+)
+Value volume (\w+)
+Value size (\d+)
+Value ostype (\S+)
+Value state (\w+)
+Value used (\d+)
+Value node (\S+)
+
+Start
+ ^${vserver}\s+${path}\s+${volume}\s+${size}GB\s+${ostype}\s+${state}\s+${used}GB\s+${node} -> Record

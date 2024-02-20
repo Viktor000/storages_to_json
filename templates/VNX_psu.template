@@ -1,0 +1,10 @@
+Value id (\w)
+Value type (\S+)
+Value partNum (\S+)
+Value sn (\S+)
+
+Start
+ ^\s+Power ${id}\s*$$
+ ^\s+EMC Part Number:\s+${partNum}
+ ^\s+EMC Serial Number:\s+${sn}
+ ^\s+Power Supply Type:\s+${type} -> Record

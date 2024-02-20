@@ -1,0 +1,3 @@
+vserver      lif       data-protocol address     netmask       home-node
+------------ --------- ------------- ----------- ------------- ---------------
+SVM_Ethernet NAS_lif_1 nfs,cifs      10.164.53.2 255.255.255.0 DA-FAS2720-01_1

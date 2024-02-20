@@ -1,0 +1,6 @@
+Value node (\S+)
+Value sn (\S+)
+Value name (.*)
+
+Start
+ ^${node}\s+${sn}\s+${name} -> Record

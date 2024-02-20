@@ -1,0 +1,9 @@
+Value node (\S+)
+Value id (\d+)
+Value sn (\S+)
+Value partNum (\S+)
+Value model (\S+)
+
+Start
+ ^${node}\s+${id}\s+${model}\s+${partNum}\s+${sn} -> Record
+

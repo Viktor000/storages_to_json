@@ -1,0 +1,14 @@
+Value Disk_Id (\d+\.\d+\.\d+)
+Value BlockSize (\d+)
+Value CapacityCount (\d+)
+Value Home (\S+)
+Value Model (\S+)
+Value Size (\d+)
+Value Status (\S+)
+Value Serial ([\d\w]+)
+Value Type (\S+)
+Value Usablesize (\d+)
+Value Vendor ([\d\w]+)
+
+Start
+ ^${Disk_Id}\s+${BlockSize}\s+${CapacityCount}\s+${Home}\s+${Model}\s+${Size}\s+${Status}\s+${Serial}\s+${Type}\s+${Usablesize}\s+${Vendor} -> Record

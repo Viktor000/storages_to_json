@@ -1,0 +1,12 @@
+Value vserver (\S+)
+Value volume (\S+)
+Value aggregate (\S+)
+Value size (\d+)
+Value state (\w+)
+Value path (\S+)
+Value used (\d+)
+Value securityStyle (\S+)
+Value files (\d+)
+
+Start
+ ^${vserver}\s+${volume}\s+${aggregate}\s+${size}GB\s+${state}\s+${securityStyle}\s+${path}\s+${used}GB\s+${files} -> Record

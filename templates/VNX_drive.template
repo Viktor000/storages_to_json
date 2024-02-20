@@ -1,0 +1,23 @@
+Value Slot1 (\d+)
+Value Slot2 (\d+)
+Value Slot3 (\d+)
+Value Vendor ([\d\w]+)
+Value State (\w+)
+Value Size (\d+)
+Value Type (.*)
+Value Prod_Id (.*)
+Value Serial ([\d\w]+)
+Value Part_num ([\d\w]+)
+Value Speed (.*)
+
+Start
+ ^Bus.*Enclosure.*Disk.* -> Continue.Record
+ ^Bus\s+${Slot1}\s+Enclosure\s+${Slot2}\s+Disk\s+${Slot3}
+ ^Vendor\sId:\s+${Vendor}
+ ^Product\sId:\s+${Prod_Id}
+ ^State:\s+${State}
+ ^Serial\sNumber:\s+${Serial}
+ ^Capacity:\s+${Size}
+ ^Clariion\sPart\sNumber:\s+${Part_num}
+ ^Drive\sType:\s+${Type}
+ ^Current\sSpeed:\s+${Speed}

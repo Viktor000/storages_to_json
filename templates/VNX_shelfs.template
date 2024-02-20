@@ -1,0 +1,10 @@
+Value id (\w+/\w+)
+Value model (.*)
+Value partNum (\S+)
+Value sn (\S+)
+
+Start
+ ^\s+${id}\s*$$
+ ^\s+EMC Part Number:\s+${partNum}
+ ^\s+EMC Serial Number:\s+${sn}
+ ^\s+Assembly Name:\s+${model}\s* -> Record

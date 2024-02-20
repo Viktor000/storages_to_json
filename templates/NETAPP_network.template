@@ -1,0 +1,16 @@
+Value vserver (\S+)
+Value lif (\S+)
+Value protocol (\S+)
+Value address (\d+.\d+.\d+.\d+)
+Value netmask (\d+.\d+.\d+.\d+)
+Value node (\S+)
+
+Start
+ ^vserver\s+lif\s+data-protocol\s+address\s+netmask\s+home-node -> TYPE1
+ ^vserver\s+lif\s+data-protocol\s+home-node\s+address\s+netmask -> TYPE2
+
+TYPE1
+ ^${vserver}\s+${lif}\s+${protocol}\s+${address}\s+${netmask}\s+${node} -> Record
+
+TYPE2
+ ^${vserver}\s+${lif}\s+${protocol}\s+${node}\s+${address}\s+${netmask} -> Record

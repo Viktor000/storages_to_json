@@ -1,0 +1,8 @@
+Value shelfId (\d+)
+Value type (\S+)
+Value partNum (\S+)
+Value sn (\S+)
+
+Start
+ ^\S+\s+${shelfId}\s+${type}\s+${partNum}\s+${sn} -> Record
+

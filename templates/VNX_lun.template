@@ -1,0 +1,6 @@
+Value Lun_id (\d+)
+Value Size ([0-9.]+)
+
+Start
+ ^LOGICAL\sUNIT\sNUMBER\s${Lun_id}
+ ^User\sCapacity\s\(GBs\):\s+${Size} -> Record
