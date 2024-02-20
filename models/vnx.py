@@ -154,5 +154,3 @@ class VNX(Storage):
         if self.access_type=='CLI':
             return self.__get_controllers_CLI__()
     
-    
-    
