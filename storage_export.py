@@ -21,20 +21,7 @@ user_emc=os.environ.get('USERNAME_EMC')
 password_emc=os.environ.get('PASSWORD_EMC')
 username=os.environ.get('USERNAME')
 password=os.environ.get('PASSWORD')
-print(user_emc)
-# username=1
-# password=2
 
-# dev =NetApp(ip,'NetApp','AFF','CLI',username,password)
-# a=dev.__get_controllers_CLI__()
-# #dev.collectData()
-# #print (dev.exportData())
-
-# #print(dev.__get_disks_CLI__())
-# print(a)
-
-
-#exit()
 
 def job(device):
     if device[1]=='NetApp'and ('AFF' in device[2] or 'FAS' in device[2]):
