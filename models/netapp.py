@@ -266,8 +266,9 @@ class NetApp(Storage):
     def __get_psu_CLI__(self):
         attributes={'Command': 'storage shelf show -fields psu-serial-number,psu-part-number,psu-type,shelf-id',
                     'Vendor': self.vendor, 'Model':self.model}
+        
+        
         self.cli_table.ParseCmd(cmd_input=self.__get_data_CLI__(attributes['Command']),attributes=attributes)
-        #print(self.cli_table)
         data_rows = [list(row) for row in self.cli_table]
         psu_list={}
         for row in data_rows:

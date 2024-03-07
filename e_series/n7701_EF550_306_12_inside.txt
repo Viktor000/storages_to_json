@@ -1,0 +1,1945 @@
+PROFILE FOR STORAGE ARRAY: n7701_EF550_306_12_inside (Thu Feb 29 16:34:18 MSK 2024)
+
+
+STORAGE ARRAY------------------------------
+
+
+   STORAGE ARRAY INFORMATION AND SETTINGS                                       
+   Storage array world-wide identifier (ID):  60080E5000433A8C000000005543D0CC  
+   Chassis Serial Number:                     711518000570                      
+   Event configuration data version:          128#NTAP_1125_17                  
+
+
+   CACHE SETTINGS                                 
+      Start demand cache flushing at:  80%        
+      Cache block size:                32 KB      
+                                                  
+   Media scan frequency:               30 days    
+   Failover alert delay:               5 minutes  
+
+
+   AUTOSUPPORT SUMMARY                             
+   Status:               Disabled                  
+                                                   
+   Schedule information                            
+      Daily schedule:    05:08 PM                  
+      Weekly schedule:   04:13 PM on ןמםוהוכüםטךs  
+
+
+   CONTROLLER HEALTH IMAGE                        
+      Tag:                  1                     
+      Time collected:       08.10.22 7:00:08 GMT  
+      Retrieved:            No                    
+
+
+   STORAGE SUMMARY                                    
+   Disk pools:                             0          
+      Volumes on Disk Pools:               0          
+   Volume groups:                          1          
+      RAID 5 Volume Groups: 1  Volumes: 0             
+   Access volumes:                         1          
+   Standard Volumes (Used/Allowed):        0 / 2 048  
+      Base:                                0          
+      Repository:                          0          
+   Thin Volumes (Used/Allowed):            0 / 2 048  
+
+
+   COPY SERVICES SUMMARY               
+   Volume copies:                   0  
+   Snapshot Groups:                 0  
+   Snapshot Images:                 0  
+   Snapshot Volumes:                0  
+   Consistency Groups:              0  
+   Member Volumes:                  0  
+   Asynchronous Mirroring              
+      Asynchronous mirror groups:   0  
+      Asynchronous mirrored pairs:  0  
+
+
+   HOST MAPPINGS SUMMARY                                     
+   Access volume:         None mapped                        
+   Default host OS:       Factory Default (Host OS index 0)  
+   Mapped volumes:        0                                  
+   Unmapped volumes:      0                                  
+
+
+   HARDWARE SUMMARY                                                         
+   Trays:                                  1                                
+      System configured to use batteries:  Yes                              
+                                                                            
+   Controllers:                            2                                
+      Redundancy mode:                     Duplex (dual controllers)        
+                                                                            
+   Drives:                                 12                               
+      Current drive media types:           Solid State Disk (12)            
+      Current drive interface type(s):     Serial Attached SCSI (SAS) (12)  
+      Total hot spare drives:              1                                
+         Standby:                          1                                
+         In use:                           0                                
+                                                                            
+   Drive security key identifier:          None                             
+
+
+   FEATURES SUMMARY                                              
+   Feature enable identifier:  3135343135203136363230205543D0CC  
+   Feature pack:               EF550                             
+   Feature pack submodel ID:   234                               
+
+
+   Feature                   Status                   Used     Allowed  
+   Synchronous Mirroring     Disabled/Deactivated     N/A      N/A      
+   Drive Security            Disabled                 N/A      N/A      
+
+
+   Additional feature information                                     
+      Snapshot groups allowed per base volume (see note below):  4    
+      Volumes allowed per storage partition:                     256  
+
+   Note: If a volume is a member of a consistency group, that membership (member volume) counts against both the overall snapshot group limit and snapshot group per base volume limit.
+
+
+   Automatic critical event collection:  Yes  
+   Existing support data schedule:       No   
+      Suspended:                         NA   
+                                              
+   Schedule Settings                          
+      Start date:                        NA   
+      End Date:                          NA   
+      Start Time:                        NA   
+      Frequency:                         NA   
+         Collected On:                   NA   
+
+   FIRMWARE INVENTORY                                         
+   SANtricity®                                                
+      AMW Version:              11.25.0G00.0031               
+      Report Date:              Thu Feb 29 16:34:33 MSK 2024  
+                                                              
+   Storage Array                                              
+      Storage Array Name:       n7701_EF550_306_12_inside     
+      Current Package Version:  08.25.09.00                   
+      Current NVSRAM Version:   N5501-825834-D06              
+      Staged Package Version:   None                          
+      Staged NVSRAM Version:    None                          
+                                                              
+   Controllers                                                
+      Location:                 Tray 99, Slot A               
+      Current Package Version:  08.25.09.00                   
+      Current NVSRAM Version:   N5501-825834-D06              
+      Board ID:                 5501                          
+      Sub-Model ID:             234                           
+                                                              
+      Location:                 Tray 99, Slot B               
+      Current Package Version:  08.25.09.00                   
+      Current NVSRAM Version:   N5501-825834-D06              
+      Board ID:                 5501                          
+      Sub-Model ID:             234                           
+                                                              
+   Power Supplies                                             
+      Location:                 Tray 99 Left                  
+      Firmware Version:         02.47                         
+                                                              
+      Location:                 Tray 99 Right                 
+      Firmware Version:         02.47                         
+                                                              
+   Drive     
+      Tray, Drawer, Slot:     Manufacturer:     Product ID:          Drive Type:                    Capacity:        Drive firmware version:     FPGA Version: (SSD only)  
+      Tray 99, Slot 1         TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 2         TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 3         TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 4         TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 5         TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 6         TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 7         TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 8         TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 9         TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 10        TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 11        TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 484,915 GB     MS01                        Not Available             
+      Tray 99, Slot 12        TOSHIBA           PX02SMB160           Serial Attached SCSI (SAS)     1 489,915 GB     MS01                        Not Available             
+
+DISK POOLS------------------------------
+
+SUMMARY
+
+   Total Disk Pools: 0
+   Total Capacity: 0,000 MB Usable, 0,000 MB Used
+   Total Free Capacity: 0,000 MB
+   Status: 0 Optimal, 0 Non Optimal
+
+   Name     Status     Usable Capacity     Used Capacity     Free Capacity     Preservation Capacity     Drive/Media Type     Volumes     Secure Capable     DA Capable     
+
+VOLUME GROUPS------------------------------
+
+SUMMARY
+
+   Total Volume Groups: 1
+   Total Capacity: 14,501 TB Usable, 0,000 MB Used
+   Total Free Capacity: 14,501 TB
+   Status: 1 Optimal, 0 Non Optimal
+
+   Name     Status     Usable Capacity     Used Capacity     Free Capacity     RAID Level     Drive/Media Type                              Volumes     Secure Capable     DA Capable     
+   0        Optimal    14,501 TB           0,000 MB          14,501 TB         5              Serial Attached SCSI (SAS), Solid State Disk  0           No                 Yes            
+
+DETAILS
+
+
+   Name:              0                                            
+                                                                   
+      Status:         Optimal                                      
+      Capacity:       14,501 TB                                    
+      Current owner:  Not applicable (no volumes on volume group)  
+
+      Quality of Service (QoS) Attributes
+
+         RAID level:                   5                           
+         Drive media type:             Solid State Disk            
+         Drive interface type:         Serial Attached SCSI (SAS)  
+         Tray loss protection:         No                          
+         Data Assurance (DA) capable:  Yes                         
+         DA enabled volume present:    No                          
+
+
+      Total Volumes:          0          
+         Standard volumes:    0          
+         Repository volumes:  0          
+         Free Capacity:       14,501 TB  
+
+      Associated drives - present (in piece order)
+      Total drives present: 11
+
+         Tray     Slot  
+         99       1     
+         99       2     
+         99       3     
+         99       4     
+         99       5     
+         99       6     
+         99       7     
+         99       8     
+         99       9     
+         99       10    
+         99       11    
+
+
+STANDARD VOLUMES------------------------------
+
+   Number of standard volumes: 0
+   See other Volumes sub-tabs for premium feature information.
+   Missing Volumes
+
+      Number of missing volumes: 0
+
+   SSD CACHE------------------------------
+
+   SUMMARY
+
+      Total SSD Cache: 0 Used, 1 Allowed
+      Type: Read
+      Maximum system-wide capacity allowed: 4 656,612 GB
+      Number Of Volumes Using SSD Cache: 0
+
+      Name     Status     Maximum Allowed Capacity     Current Capacity     Additional Allowed Capacity     Total Volumes     Secure Capable     DA Capable     
+
+
+   DETAILS
+
+   Storage Array n7701_EF550_306_12_inside
+|- Total Unconfigured Capacity (0,000 MB)
+|- Volume Groups
+| |- Volume Group 0 (RAID 5) (14,501 TB)
+| | |- Free Capacity (14,501 TB)
+|- Consistency Groups
+|- Asynchronous Mirror Groups
+VOLUME COPIES------------------------------
+
+      Number of copies: 0
+
+   SNAPSHOT GROUPS-----------------------------
+
+      Total Snapshot groups: 0
+
+   DETAILS
+
+   SNAPSHOT IMAGES------------------------------
+
+   SUMMARY
+
+      Total Snapshot Images: 0
+
+   DETAILS
+
+   SNAPSHOT VOLUMES------------------------------
+
+      Total Snapshot Volumes: 0
+
+DETAILS
+
+CONSISTENCY GROUPS------------------------------
+
+
+Total Consistency Groups:  0  
+
+DETAILS
+
+CONSISTENCY GROUP MEMBER VOLUMES-----------------------------
+
+   Total Snapshot groups: 0
+
+DETAILS
+
+NO MAPPINGS (SANshare Storage Partitioning - Enabled (0 of 512 used))-------------------
+
+
+
+   TOPOLOGY DEFINITIONS                           
+                                                  
+      STORAGE ARRAY                               
+         Default type:   Factory Default          
+         Host Port:      50:05:07:68:0c:24:0e:cc  
+         Host Port:      50:05:07:68:0c:12:0e:cc  
+         Host Port:      50:05:07:68:0c:11:0e:cc  
+         Host Port:      50:05:07:68:0c:24:0e:cd  
+         Host Port:      50:05:07:68:0c:11:0e:cd  
+         Host Port:      50:05:07:68:0c:14:0e:cd  
+         Host Port:      50:05:07:68:0c:12:0e:cd  
+         Host Port:      50:05:07:68:0c:23:0e:cd  
+         Host Port:      50:05:07:68:0c:23:0e:cc  
+         Host Port:      50:05:07:68:0c:13:0e:cc  
+         Host Port:      50:05:07:68:0c:21:0e:cc  
+         Host Port:      50:05:07:68:0c:21:0e:cd  
+         Host Port:      50:05:07:68:0c:22:0e:cd  
+         Host Port:      50:05:07:68:0c:13:0e:cd  
+         Host Port:      50:05:07:68:0c:14:0e:cc  
+         Host Port:      50:05:07:68:0c:22:0e:cc  
+                                                  
+                                                  
+         Default Group                            
+                                                  
+
+   NVSRAM HOST TYPE DEFINITIONS
+
+   NOTE: The following indexes are not used: 3 - 4, 11 - 14, 16, 19 - 21, 28 - 31
+
+
+   HOST TYPE                            ALUA/AVT STATUS               
+   AIX MPIO                             Disabled         9            
+   AVT_4M                               Enabled          5            
+   Data ONTAP (ALUA)                    Enabled          26           
+   Factory Default                      Disabled         0 (Default)  
+   HP-UX                                Enabled          15           
+   Linux (ATTO)                         Enabled          24           
+   Linux (DM-MP)                        Enabled          7            
+   Linux (MPP/RDAC)                     Disabled         6            
+   Linux (Pathmanager)                  Enabled          25           
+   Linux (Symantec Storage Foundation)  Enabled          27           
+   Mac OS                               Enabled          22           
+   SVC                                  Enabled          18           
+   Solaris (v11 or later)               Enabled          17           
+   Solaris (version 10 or earlier)      Disabled         2            
+   VMWare                               Enabled          10           
+   Windows                              Enabled          1            
+   Windows (ATTO)                       Enabled          23           
+   Windows Clustered                    Enabled          8            
+
+CONTROLLERS------------------------------
+   Number of controllers: 2
+
+      Controller in Tray 99, Slot A
+       
+
+         Status:                       Online                          
+                                                                       
+         Current configuration                                         
+            Firmware version:          08.25.09.00                     
+               Appware version:        08.25.09.00                     
+               Bootware version:       08.25.09.00                     
+            NVSRAM version:            N5501-825834-D06                
+         Pending configuration                                         
+            Firmware version:          None                            
+               Appware version:        None                            
+               Bootware version:       None                            
+            NVSRAM version:            None                            
+            Transferred on:            None                            
+         Model name:                   5504                            
+         Board ID:                     5501                            
+         Manufacturer Submodel ID:     234                             
+         Product ID:                   INF-01-00                       
+         Revision:                     0825                            
+         Replacement part number:      EF-X551202A-R6                  
+         Part number:                  111-02817                       
+         Serial number:                SV51216620                      
+         Vendor:                       NETAPP                          
+         Date of manufacture:          1 לאנעא 2015 ד.                 
+         Trunking supported:           No                              
+                                                                       
+         Data Cache                                                    
+            Total present:             10240 MB                        
+            Total used:                8192 MB                         
+         Data Cache Module                                             
+            Status:                    Optimal                         
+            Location:                  Controller A, Slot 1            
+            Capacity:                  4 096 MB                        
+            Replacement Part number:   Not Available                   
+            Manufacturer Part Number:  VR7VA127258GBFHFN2              
+            Part Number:               Not Available                   
+            Serial number:             205632776                       
+            Manufacturer:              Unknown                         
+            Date of manufacture:       19 לאנעא 2015 ד.                
+            Shared:                    Yes                             
+            Revision Code:             0x00 0x00                       
+         Data Cache Module                                             
+            Status:                    Optimal                         
+            Location:                  Controller A, Slot 2            
+            Capacity:                  4 096 MB                        
+            Replacement Part number:   Not Available                   
+            Manufacturer Part Number:  VR7VA127258GBFHFN2              
+            Part Number:               Not Available                   
+            Serial number:             205632774                       
+            Manufacturer:              Unknown                         
+            Date of manufacture:       19 לאנעא 2015 ד.                
+            Shared:                    Yes                             
+            Revision Code:             0x00 0x00                       
+         Data Cache Module                                             
+            Status:                    Optimal                         
+            Location:                  Controller A, Slot 3            
+            Capacity:                  4 096 MB                        
+            Replacement Part number:   Not Available                   
+            Manufacturer Part Number:  VR7VA127258GBFHFN2              
+            Part Number:               Not Available                   
+            Serial number:             205632775                       
+            Manufacturer:              Unknown                         
+            Date of manufacture:       19 לאנעא 2015 ד.                
+            Shared:                    Yes                             
+            Revision Code:             0x00 0x00                       
+         Processor cache:                                              
+            Total present:             2011 MB                         
+         Cache Backup Device                                           
+            Status:                    Optimal                         
+            Type:                      SATA flash drive                
+            Location:                  Controller A, Connector SATA 1  
+            Capacity:                  8 192 MB                        
+            Product ID:                SMART microSATA                 
+            Part number:               Not Available                   
+            Serial number:             SPG150707A8                     
+            Revision level:            Ver6                            
+            Manufacturer:              XceedLi                         
+            Date of manufacture:       Not available                   
+         Host Interface Board                                          
+            Status:                    Optimal                         
+            Location:                  Slot 1                          
+            Type:                      Fibre channel                   
+            Number of ports:           4                               
+            Board ID:                  1794                            
+            Replacement part number:   110-00408                       
+            Part number:               PN 110-00408                    
+            Serial number:             SN 021509004090                 
+            Vendor:                    VN NETAPP                       
+            Date of manufacture:       1 לאנעא 2015 ד.                 
+         Date/Time:                    Thu Feb 29 16:34:33 MSK 2024    
+
+      Associated Volumes (* = Preferred Owner): None
+
+
+      Controller DNS/Network name:   target    
+         Remote login:               Disabled  
+
+      Domain Name System (DNS) configuration:  Static          
+         Primary DNS server:                   10.253.254.233  
+         Backup DNS server:                    10.253.254.236  
+
+      Network Time Protocol (NTP):  Enabled         
+         NTP configuration:         Static          
+            Primary NTP server:     10.251.254.231  
+            Backup NTP server:      10.251.254.232  
+
+      Ethernet port:                 1                                        
+         Link status:                Up                                       
+         MAC address:                00:80:e5:43:3d:60                        
+         Negotiation mode:           Auto-negotiate                           
+            Port speed:              1000 Mbps                                
+            Duplex mode:             Full duplex                              
+         Network configuration:      Static                                   
+         IP address:                 172.29.12.1                              
+         Subnet mask:                255.255.0.0                              
+         Gateway:                    172.29.0.1                               
+                                                                              
+      Ethernet port:                 2                                        
+         Link status:                Down                                     
+         MAC address:                00:80:e5:43:3d:61                        
+         Negotiation mode:           Auto-negotiate                           
+            Port speed:              Unknown                                  
+            Duplex mode:             Half duplex                              
+         IPv4 settings:              Enabled                                  
+            Network configuration:   Static                                   
+            IP address:              0.0.0.0                                  
+            Subnet mask:             0.0.0.0                                  
+            Gateway:                 172.29.0.1                               
+         IPv6 settings:              Enabled                                  
+            Auto-configuration:      Stateless                                
+            Local IP address:        0000:0000:0000:0000:0000:0000:0000:0000  
+            Router IP address:       FE80:0000:0000:0000:0280:E5FF:FE43:3D60  
+                                                                              
+
+
+      Drive interface:        SAS                                 
+         Channel:             1                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Down                                
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   Not available                       
+
+      Drive interface:        SAS                                 
+         Channel:             2                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Down                                
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   Not available                       
+
+      Drive interface:        SAS                                 
+         Channel:             3                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Drive interface:        SAS                                 
+         Channel:             4                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Drive interface:        SAS                                 
+         Channel:             5                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Drive interface:        SAS                                 
+         Channel:             6                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Drive interface:        SAS                                 
+         Channel:             7                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Host interface:                  Fibre                           
+         Host Interface Card(HIC):     1                               
+         Channel:                      1                               
+         Port:                         1                               
+         Current ID:                   Not applicable/0xFFFFFFFF       
+         Preferred ID:                 0/0xEF                          
+         NL-Port ID:                   0x082800                        
+         Maximum data rate:            16 Gbps                         
+         Current data rate:            16 Gbps                         
+         Data rate control:            Auto                            
+         Link status:                  Up                              
+         Topology:                     Fabric Attach                   
+         World-wide port identifier:   20:12:00:80:e5:43:3d:60         
+         World-wide node identifier:   20:02:00:80:e5:43:3d:60         
+         Part type:                    QL-EP8324           revision 2  
+         Data Assurance (DA) capable:  Yes                             
+
+      Host interface:                  Fibre                           
+         Host Interface Card(HIC):     1                               
+         Channel:                      2                               
+         Port:                         2                               
+         Current ID:                   Not applicable/0xFFFFFFFF       
+         Preferred ID:                 1/0xE8                          
+         NL-Port ID:                   0x072800                        
+         Maximum data rate:            16 Gbps                         
+         Current data rate:            16 Gbps                         
+         Data rate control:            Auto                            
+         Link status:                  Up                              
+         Topology:                     Fabric Attach                   
+         World-wide port identifier:   20:22:00:80:e5:43:3d:60         
+         World-wide node identifier:   20:02:00:80:e5:43:3d:60         
+         Part type:                    QL-EP8324           revision 2  
+         Data Assurance (DA) capable:  Yes                             
+
+      Host interface:                  Fibre                           
+         Host Interface Card(HIC):     1                               
+         Channel:                      3                               
+         Port:                         3                               
+         Current ID:                   Not applicable/0xFFFFFFFF       
+         Preferred ID:                 2/0xE4                          
+         NL-Port ID:                   0x082C00                        
+         Maximum data rate:            16 Gbps                         
+         Current data rate:            16 Gbps                         
+         Data rate control:            Auto                            
+         Link status:                  Up                              
+         Topology:                     Fabric Attach                   
+         World-wide port identifier:   20:32:00:80:e5:43:3d:60         
+         World-wide node identifier:   20:02:00:80:e5:43:3d:60         
+         Part type:                    QL-EP8324           revision 2  
+         Data Assurance (DA) capable:  Yes                             
+
+      Host interface:                  Fibre                           
+         Host Interface Card(HIC):     1                               
+         Channel:                      4                               
+         Port:                         4                               
+         Current ID:                   Not applicable/0xFFFFFFFF       
+         Preferred ID:                 3/0xE2                          
+         NL-Port ID:                   0x072C00                        
+         Maximum data rate:            16 Gbps                         
+         Current data rate:            16 Gbps                         
+         Data rate control:            Auto                            
+         Link status:                  Up                              
+         Topology:                     Fabric Attach                   
+         World-wide port identifier:   20:42:00:80:e5:43:3d:60         
+         World-wide node identifier:   20:02:00:80:e5:43:3d:60         
+         Part type:                    QL-EP8324           revision 2  
+         Data Assurance (DA) capable:  Yes                             
+
+      Controller in Tray 99, Slot B
+       
+
+         Status:                       Online                          
+                                                                       
+         Current configuration                                         
+            Firmware version:          08.25.09.00                     
+               Appware version:        08.25.09.00                     
+               Bootware version:       08.25.09.00                     
+            NVSRAM version:            N5501-825834-D06                
+         Pending configuration                                         
+            Firmware version:          None                            
+               Appware version:        None                            
+               Bootware version:       None                            
+            NVSRAM version:            None                            
+            Transferred on:            None                            
+         Model name:                   5504                            
+         Board ID:                     5501                            
+         Manufacturer Submodel ID:     234                             
+         Product ID:                   INF-01-00                       
+         Revision:                     0825                            
+         Replacement part number:      EF-X551202A-R6                  
+         Part number:                  111-02817                       
+         Serial number:                SV51215415                      
+         Vendor:                       NETAPP                          
+         Date of manufacture:          1 לאנעא 2015 ד.                 
+         Trunking supported:           No                              
+                                                                       
+         Data Cache                                                    
+            Total present:             10240 MB                        
+            Total used:                8192 MB                         
+         Data Cache Module                                             
+            Status:                    Optimal                         
+            Location:                  Controller B, Slot 4            
+            Capacity:                  4 096 MB                        
+            Replacement Part number:   Not Available                   
+            Manufacturer Part Number:  VR7VA127258GBFHFN2              
+            Part Number:               Not Available                   
+            Serial number:             205632457                       
+            Manufacturer:              Unknown                         
+            Date of manufacture:       19 לאנעא 2015 ד.                
+            Shared:                    Yes                             
+            Revision Code:             0x00 0x00                       
+         Data Cache Module                                             
+            Status:                    Optimal                         
+            Location:                  Controller B, Slot 5            
+            Capacity:                  4 096 MB                        
+            Replacement Part number:   Not Available                   
+            Manufacturer Part Number:  VR7VA127258GBFHFN2              
+            Part Number:               Not Available                   
+            Serial number:             205632828                       
+            Manufacturer:              Unknown                         
+            Date of manufacture:       19 לאנעא 2015 ד.                
+            Shared:                    Yes                             
+            Revision Code:             0x00 0x00                       
+         Data Cache Module                                             
+            Status:                    Optimal                         
+            Location:                  Controller B, Slot 6            
+            Capacity:                  4 096 MB                        
+            Replacement Part number:   Not Available                   
+            Manufacturer Part Number:  VR7VA127258GBFHFN2              
+            Part Number:               Not Available                   
+            Serial number:             205632838                       
+            Manufacturer:              Unknown                         
+            Date of manufacture:       19 לאנעא 2015 ד.                
+            Shared:                    Yes                             
+            Revision Code:             0x00 0x00                       
+         Processor cache:                                              
+            Total present:             2011 MB                         
+         Cache Backup Device                                           
+            Status:                    Optimal                         
+            Type:                      SATA flash drive                
+            Location:                  Controller B, Connector SATA 2  
+            Capacity:                  8 192 MB                        
+            Product ID:                SMART microSATA                 
+            Part number:               Not Available                   
+            Serial number:             SPG1507071E                     
+            Revision level:            Ver6                            
+            Manufacturer:              XceedLi                         
+            Date of manufacture:       Not available                   
+         Host Interface Board                                          
+            Status:                    Optimal                         
+            Location:                  Slot 1                          
+            Type:                      Fibre channel                   
+            Number of ports:           4                               
+            Board ID:                  1794                            
+            Replacement part number:   110-00408                       
+            Part number:               PN 110-00408                    
+            Serial number:             SN 021509004302                 
+            Vendor:                    VN NETAPP                       
+            Date of manufacture:       1 לאנעא 2015 ד.                 
+         Date/Time:                    Thu Feb 29 16:34:34 MSK 2024    
+
+      Associated Volumes (* = Preferred Owner): None
+
+
+      Controller DNS/Network name:   target    
+         Remote login:               Disabled  
+
+      Domain Name System (DNS) configuration:  Static          
+         Primary DNS server:                   10.253.254.233  
+         Backup DNS server:                    10.253.254.236  
+
+      Network Time Protocol (NTP):  Enabled         
+         NTP configuration:         Static          
+            Primary NTP server:     10.251.254.231  
+            Backup NTP server:      10.251.254.232  
+
+      Ethernet port:                 1                                        
+         Link status:                Up                                       
+         MAC address:                00:80:e5:43:3a:8c                        
+         Negotiation mode:           Auto-negotiate                           
+            Port speed:              1000 Mbps                                
+            Duplex mode:             Full duplex                              
+         Network configuration:      Static                                   
+         IP address:                 172.29.12.2                              
+         Subnet mask:                255.255.0.0                              
+         Gateway:                    172.29.0.1                               
+                                                                              
+      Ethernet port:                 2                                        
+         Link status:                Down                                     
+         MAC address:                00:80:e5:43:3a:8d                        
+         Negotiation mode:           Auto-negotiate                           
+            Port speed:              Unknown                                  
+            Duplex mode:             Half duplex                              
+         IPv4 settings:              Enabled                                  
+            Network configuration:   Static                                   
+            IP address:              0.0.0.0                                  
+            Subnet mask:             0.0.0.0                                  
+            Gateway:                 172.29.0.1                               
+         IPv6 settings:              Enabled                                  
+            Auto-configuration:      Stateless                                
+            Local IP address:        0000:0000:0000:0000:0000:0000:0000:0000  
+            Router IP address:       FE80:0000:0000:0000:0280:E5FF:FE43:3A8C  
+                                                                              
+
+
+      Drive interface:        SAS                                 
+         Channel:             1                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Down                                
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   Not available                       
+
+      Drive interface:        SAS                                 
+         Channel:             2                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Down                                
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   Not available                       
+
+      Drive interface:        SAS                                 
+         Channel:             3                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Drive interface:        SAS                                 
+         Channel:             4                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Drive interface:        SAS                                 
+         Channel:             5                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Drive interface:        SAS                                 
+         Channel:             6                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Drive interface:        SAS                                 
+         Channel:             7                                   
+         Part type:           LSISAS2308    revision 223 037 952  
+            Status:           Up                                  
+         Maximum data rate:   6 Gbps                              
+         Current data rate:   6 Gbps                              
+
+      Host Interface(s): Unable to retrieve latest data; using last known state.
+
+
+      Host interface:                  Fibre                           
+         Host Interface Card(HIC):     1                               
+         Channel:                      1                               
+         Port:                         1                               
+         Current ID:                   126/0x0                         
+         Preferred ID:                 8/0xD9                          
+         NL-Port ID:                   0x202D00                        
+         Maximum data rate:            16 Gbps                         
+         Current data rate:            16 Gbps                         
+         Data rate control:            Auto                            
+         Link status:                  Up                              
+         Topology:                     Fabric Attach                   
+         World-wide port identifier:   20:13:00:80:e5:43:3d:60         
+         World-wide node identifier:   20:02:00:80:e5:43:3d:60         
+         Part type:                    QL-EP8324           revision 2  
+         Data Assurance (DA) capable:  Yes                             
+
+      Host interface:                  Fibre                           
+         Host Interface Card(HIC):     1                               
+         Channel:                      2                               
+         Port:                         2                               
+         Current ID:                   126/0x0                         
+         Preferred ID:                 9/0xD6                          
+         NL-Port ID:                   0x202800                        
+         Maximum data rate:            16 Gbps                         
+         Current data rate:            16 Gbps                         
+         Data rate control:            Auto                            
+         Link status:                  Up                              
+         Topology:                     Fabric Attach                   
+         World-wide port identifier:   20:23:00:80:e5:43:3d:60         
+         World-wide node identifier:   20:02:00:80:e5:43:3d:60         
+         Part type:                    QL-EP8324           revision 2  
+         Data Assurance (DA) capable:  Yes                             
+
+      Host interface:                  Fibre                           
+         Host Interface Card(HIC):     1                               
+         Channel:                      3                               
+         Port:                         3                               
+         Current ID:                   126/0x0                         
+         Preferred ID:                 10/0xD5                         
+         NL-Port ID:                   0x202C00                        
+         Maximum data rate:            16 Gbps                         
+         Current data rate:            16 Gbps                         
+         Data rate control:            Auto                            
+         Link status:                  Up                              
+         Topology:                     Fabric Attach                   
+         World-wide port identifier:   20:33:00:80:e5:43:3d:60         
+         World-wide node identifier:   20:02:00:80:e5:43:3d:60         
+         Part type:                    QL-EP8324           revision 2  
+         Data Assurance (DA) capable:  Yes                             
+
+      Host interface:                  Fibre                           
+         Host Interface Card(HIC):     1                               
+         Channel:                      4                               
+         Port:                         4                               
+         Current ID:                   126/0x0                         
+         Preferred ID:                 11/0xD4                         
+         NL-Port ID:                   0x202C00                        
+         Maximum data rate:            16 Gbps                         
+         Current data rate:            16 Gbps                         
+         Data rate control:            Auto                            
+         Link status:                  Up                              
+         Topology:                     Fabric Attach                   
+         World-wide port identifier:   20:43:00:80:e5:43:3d:60         
+         World-wide node identifier:   20:02:00:80:e5:43:3d:60         
+         Part type:                    QL-EP8324           revision 2  
+         Data Assurance (DA) capable:  Yes                             
+
+DRIVES------------------------------
+
+SUMMARY
+   Number of drives: 12
+      Current media type(s): Solid State Disk (12)
+      Current interface type(s): Serial Attached SCSI (SAS) (12)
+      Drive capabilities: Data Assurance (DA) (12)
+
+   BASIC:
+
+      TRAY, SLOT  STATUS   CAPACITY      MEDIA TYPE        INTERFACE TYPE  CURRENT DATA RATE  PRODUCT ID        FIRMWARE VERSION  CAPABILITIES  
+      99,    1    Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    2    Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    3    Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    4    Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    5    Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    6    Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    7    Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    8    Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    9    Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    10   Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    11   Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+      99,    12   Optimal  1 490,415 GB  Solid State Disk  SAS             6 Gbps             PX02SMB160        MS01              DA            
+
+   DRIVE CHANNELS (Controller A):
+
+      TRAY, SLOT  PREFERRED CHANNEL  REDUNDANT CHANNEL  
+      99,    1    3                  4, 5               
+      99,    2    4                  3, 5               
+      99,    3    5                  4, 3               
+      99,    4    3                  4, 5               
+      99,    5    4                  5, 3               
+      99,    6    5                  4, 3               
+      99,    7    3                  4, 5               
+      99,    8    4                  3, 5               
+      99,    9    5                  4, 3               
+      99,    10   3                  4, 5               
+      99,    11   4                  3, 5               
+      99,    12   5                  4, 3               
+
+
+HOT SPARE COVERAGE:
+   The following volume groups are not protected: None - All volume groups are protected
+   Total hot spare drives: 1
+
+      Standby:  1  
+      In use:   0  
+
+   Standby drive at tray 99, slot 12 (SAS, 1 490,415 GB)
+      Protects the following volume groups: 0
+
+
+   DETAILS
+   Drive at Tray 99, Slot 1
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:9c:89:19:24:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  64O0A02VT26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            1 ט‏כÿ 2014 ד.              
+
+   Drive at Tray 99, Slot 2
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:9c:89:1e:28:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  64O0A08MT26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            1 ט‏כÿ 2014 ד.              
+
+   Drive at Tray 99, Slot 3
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:bc:89:6b:80:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  84D0A036T26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            19 אגדףסעא 2014 ד.          
+
+   Drive at Tray 99, Slot 4
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:9c:89:1e:20:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  64O0A08KT26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            1 ט‏כÿ 2014 ד.              
+
+   Drive at Tray 99, Slot 5
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:bc:89:6b:78:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  84D0A034T26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            19 אגדףסעא 2014 ד.          
+
+   Drive at Tray 99, Slot 6
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:9c:89:1e:34:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  64O0A08PT26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            1 ט‏כÿ 2014 ד.              
+
+   Drive at Tray 99, Slot 7
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:bc:89:6b:84:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  84D0A037T26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            19 אגדףסעא 2014 ד.          
+
+   Drive at Tray 99, Slot 8
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:96:0c:89:62:30:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  15K0A00FT26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            28 ÿםגאנÿ 2015 ד.           
+
+   Drive at Tray 99, Slot 9
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:9c:89:1e:1c:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  64O0A08JT26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            1 ט‏כÿ 2014 ד.              
+
+   Drive at Tray 99, Slot 10
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:9c:89:1e:24:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  64O0A08LT26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            1 ט‏כÿ 2014 ד.              
+
+   Drive at Tray 99, Slot 11
+    
+
+      Status:                   Optimal                                          
+                                                                                 
+      Mode:                     Assigned                                         
+      Raw capacity:             1 490,415 GB                                     
+      Usable capacity:          1 484,915 GB                                     
+      World-wide identifier:    50:00:03:95:9c:89:1e:40:00:00:00:00:00:00:00:00  
+      Associated volume group:  0                                                
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  64O0A08ST26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            1 ט‏כÿ 2014 ד.              
+
+   Drive at Tray 99, Slot 12
+    
+
+      Status:                  Optimal                                          
+                                                                                
+      Mode:                    Hot spare standby                                
+      Raw capacity:            1 490,415 GB                                     
+      Usable capacity:         1 489,915 GB                                     
+      World-wide identifier:   50:00:03:95:9c:89:1e:30:00:00:00:00:00:00:00:00  
+
+
+      Port      Channel                   
+      0         3, 5 (Controller A only)  
+      1         4                         
+                                          
+
+
+      Media type:                     Solid State Disk            
+      Interface type:                 Serial Attached SCSI (SAS)  
+      Drive path redundancy:          OK                          
+                                                                  
+      Wear life monitoring:           Enabled                     
+      Average erase count:            1%                          
+      Spare blocks remaining:         100%                        
+                                                                  
+      Drive capabilities:             Data Assurance (DA)         
+                                                                  
+      Security capable:               No                          
+      Secure:                         No                          
+      Read/write accessible:          Yes                         
+      Drive security key identifier:  Not Applicable              
+                                                                  
+      Data Assurance (DA) capable:    Yes                         
+                                                                  
+      Current data rate:              6 Gbps                      
+      Logical sector size:            512 bytes                   
+      Physical sector size:           4096 bytes                  
+      Product ID:                     PX02SMB160                  
+      Drive firmware version:         MS01                        
+      FPGA version:                                               
+      Serial number:                  64O0A08OT26A                
+      Manufacturer:                   TOSHIBA                     
+      Date of manufacture:            1 ט‏כÿ 2014 ד.              
+
+DRIVE CHANNELS----------------------------
+
+   SUMMARY
+
+      CHANNEL  CHANNEL TYPE  CTRL A LINK STATUS  CTRL B LINK STATUS  
+      1        Expansion     Not Connected       Not Connected       
+      2        Expansion     Not Connected       Not Connected       
+      3        Internal      Up                  Up                  
+      4        Internal      Up                  Up                  
+      5        Internal      Up                  Up                  
+      6        Internal      Up                  Up                  
+      7        Internal      Up                  Up                  
+
+   DETAILS
+
+      DRIVE CHANNEL 1
+
+         Not Connected
+
+      DRIVE CHANNEL 2
+
+         Not Connected
+
+      DRIVE CHANNEL 3
+
+         Channel Type: Internal
+         Max. Rate: 6 Gbps
+         Current Rate:
+            Controller A : 6 Gbps
+            Controller B : 6 Gbps
+         Link Status:
+            Controller A : Up
+            Controller B : Up
+         Rate Control: Switched
+
+         DRIVE COUNTS
+
+            Total number of attached drives: 12
+            Connected to: Controller A
+               Attached drives: 12
+                  Drive tray: 99 (12 drives)
+
+            CUMULATIVE ERROR COUNTS
+
+               Controller A
+
+                  Baseline time set:               06.03.17 11:36:52    
+                  Sample period (days, hh:mm:ss):  2551 days, 04:57:42  
+                  Controller detected errors:      0                    
+                  Drive detected errors:           0                    
+                  Timeout errors:                  0                    
+                  Total I/O count:                 1256                 
+
+               Controller B
+
+                  Baseline time set:               08.10.22 10:00:57   
+                  Sample period (days, hh:mm:ss):  509 days, 06:33:37  
+                  Controller detected errors:      0                   
+                  Drive detected errors:           0                   
+                  Timeout errors:                  0                   
+                  Total I/O count:                 6                   
+
+      DRIVE CHANNEL 4
+
+         Channel Type: Internal
+         Max. Rate: 6 Gbps
+         Current Rate:
+            Controller A : 6 Gbps
+            Controller B : 6 Gbps
+         Link Status:
+            Controller A : Up
+            Controller B : Up
+         Rate Control: Switched
+
+         DRIVE COUNTS
+
+            Total number of attached drives: 12
+            Connected to: Controller B
+               Attached drives: 12
+                  Drive tray: 99 (12 drives)
+
+            CUMULATIVE ERROR COUNTS
+
+               Controller A
+
+                  Baseline time set:               06.03.17 11:36:52    
+                  Sample period (days, hh:mm:ss):  2551 days, 04:57:42  
+                  Controller detected errors:      0                    
+                  Drive detected errors:           0                    
+                  Timeout errors:                  0                    
+                  Total I/O count:                 86                   
+
+               Controller B
+
+                  Baseline time set:               08.10.22 10:00:57   
+                  Sample period (days, hh:mm:ss):  509 days, 06:33:37  
+                  Controller detected errors:      0                   
+                  Drive detected errors:           0                   
+                  Timeout errors:                  0                   
+                  Total I/O count:                 1175                
+
+      DRIVE CHANNEL 5
+
+         Channel Type: Internal
+         Max. Rate: 6 Gbps
+         Current Rate:
+            Controller A : 6 Gbps
+            Controller B : 6 Gbps
+         Link Status:
+            Controller A : Up
+            Controller B : Up
+         Rate Control: Switched
+
+         DRIVE COUNTS
+
+            Total number of attached drives: 12
+            Connected to: Controller A
+               Attached drives: 12
+                  Drive tray: 99 (12 drives)
+
+            CUMULATIVE ERROR COUNTS
+
+               Controller A
+
+                  Baseline time set:               06.03.17 11:36:52    
+                  Sample period (days, hh:mm:ss):  2551 days, 04:57:42  
+                  Controller detected errors:      0                    
+                  Drive detected errors:           0                    
+                  Timeout errors:                  0                    
+                  Total I/O count:                 87                   
+
+               Controller B
+
+                  Baseline time set:               08.10.22 10:00:57   
+                  Sample period (days, hh:mm:ss):  509 days, 06:33:37  
+                  Controller detected errors:      0                   
+                  Drive detected errors:           0                   
+                  Timeout errors:                  0                   
+                  Total I/O count:                 12                  
+
+      DRIVE CHANNEL 6
+
+         Channel Type: Internal
+         Max. Rate: 6 Gbps
+         Current Rate:
+            Controller A : 6 Gbps
+            Controller B : 6 Gbps
+         Link Status:
+            Controller A : Up
+            Controller B : Up
+         Rate Control: Switched
+
+         DRIVE COUNTS
+
+            Total number of attached drives: 12
+            Connected to: Controller B
+               Attached drives: 12
+                  Drive tray: 99 (12 drives)
+
+            CUMULATIVE ERROR COUNTS
+
+               Controller A
+
+                  Baseline time set:               06.03.17 11:36:52    
+                  Sample period (days, hh:mm:ss):  2551 days, 04:57:42  
+                  Controller detected errors:      0                    
+                  Drive detected errors:           0                    
+                  Timeout errors:                  0                    
+                  Total I/O count:                 1170                 
+
+               Controller B
+
+                  Baseline time set:               08.10.22 10:00:57   
+                  Sample period (days, hh:mm:ss):  509 days, 06:33:37  
+                  Controller detected errors:      0                   
+                  Drive detected errors:           0                   
+                  Timeout errors:                  0                   
+                  Total I/O count:                 0                   
+
+      DRIVE CHANNEL 7
+
+         Channel Type: Internal
+         Max. Rate: 6 Gbps
+         Current Rate:
+            Controller A : 6 Gbps
+            Controller B : 6 Gbps
+         Link Status:
+            Controller A : Up
+            Controller B : Up
+         Rate Control: Switched
+
+         DRIVE COUNTS
+
+            Total number of attached drives: 12
+            Connected to: Controller B
+               Attached drives: 12
+                  Drive tray: 99 (12 drives)
+
+            CUMULATIVE ERROR COUNTS
+
+               Controller A
+
+                  Baseline time set:               06.03.17 11:36:52    
+                  Sample period (days, hh:mm:ss):  2551 days, 04:57:42  
+                  Controller detected errors:      0                    
+                  Drive detected errors:           0                    
+                  Timeout errors:                  0                    
+                  Total I/O count:                 0                    
+
+               Controller B
+
+                  Baseline time set:               08.10.22 10:00:57   
+                  Sample period (days, hh:mm:ss):  509 days, 06:33:37  
+                  Controller detected errors:      0                   
+                  Drive detected errors:           0                   
+                  Timeout errors:                  0                   
+                  Total I/O count:                 1171                
+
+   CABLE CONNECTIONS
+
+      No external connections to view  
+TRAYS------------------------------
+ Controller/Drive Tray 99 Overall Component Information
+
+
+
+         Tray path redundancy:  OK                 
+         Current drive types:   SAS                
+         Part number:           PN L2-25067-30     
+         Serial number:         SN SX50400433      
+         Vendor:                VN LSI             
+         Date of manufacture:   1 פוגנאכÿ 2015 ד.  
+
+
+ Batteries Detected: 2
+
+
+
+         Battery status:              Optimal                
+         Location:                    Controller A           
+         Age:                         3 225 days             
+         Days until replacement:      Not applicable         
+         Last learn cycle:            15 פוגנאכÿ 2024 ד.     
+         Next learn cycle:            11 אןנוכÿ 2024 ד.      
+         Weeks between learn cycles:  8                      
+         Part number:                 PN 43543-10            
+         Serial number:               SN SY50350805SO        
+         Vendor:                      VN LSI                 
+         Date of manufacture:         1 ÿםגאנÿ 2015 ד.       
+
+
+         Battery status:              Optimal                
+         Location:                    Controller B           
+         Age:                         3 225 days             
+         Days until replacement:      Not applicable         
+         Last learn cycle:            15 פוגנאכÿ 2024 ד.     
+         Next learn cycle:            11 אןנוכÿ 2024 ד.      
+         Weeks between learn cycles:  8                      
+         Part number:                 PN 43543-10            
+         Serial number:               SN SY50350575SO        
+         Vendor:                      VN LSI                 
+         Date of manufacture:         1 ÿםגאנÿ 2015 ד.       
+
+
+
+ SFPs Detected:  8
+
+
+
+         SFP status:              Optimal                           
+         Attached to:             Host-side of controller A         
+         Location:                Channel 1                         
+         Supported data rate(s):  16 Gbps, 10 Gbps, 8 Gbps, 4 Gbps  
+         Link length:             Short                             
+         Connector:               LC                                
+         Transmitter type:        Shortwave Laser w/o OFC           
+         Transmission media:      TM Multi-mode 62.5m(M6)           
+         IEEE company ID:         00 17 6a                          
+         Revision:                Not Available                     
+         Part number:             AFBR-57F5UMZ-EP1                  
+         Serial number:           AC1510J05NZ                       
+         Vendor:                  AVAGO                             
+         Date of manufacture:     7 לאנעא 2015 ד.                   
+
+
+         SFP status:              Optimal                           
+         Attached to:             Host-side of controller A         
+         Location:                Channel 2                         
+         Supported data rate(s):  16 Gbps, 10 Gbps, 8 Gbps, 4 Gbps  
+         Link length:             Short                             
+         Connector:               LC                                
+         Transmitter type:        Shortwave Laser w/o OFC           
+         Transmission media:      TM Multi-mode 62.5m(M6)           
+         IEEE company ID:         00 17 6a                          
+         Revision:                Not Available                     
+         Part number:             AFBR-57F5UMZ-EP1                  
+         Serial number:           AC1510J05NS                       
+         Vendor:                  AVAGO                             
+         Date of manufacture:     7 לאנעא 2015 ד.                   
+
+
+         SFP status:              Optimal                           
+         Attached to:             Host-side of controller A         
+         Location:                Channel 3                         
+         Supported data rate(s):  16 Gbps, 10 Gbps, 8 Gbps, 4 Gbps  
+         Link length:             Short                             
+         Connector:               LC                                
+         Transmitter type:        Shortwave Laser w/o OFC           
+         Transmission media:      TM Multi-mode 62.5m(M6)           
+         IEEE company ID:         00 17 6a                          
+         Revision:                Not Available                     
+         Part number:             AFBR-57F5UMZ-EP1                  
+         Serial number:           AC1510J05P3                       
+         Vendor:                  AVAGO                             
+         Date of manufacture:     7 לאנעא 2015 ד.                   
+
+
+         SFP status:              Optimal                           
+         Attached to:             Host-side of controller A         
+         Location:                Channel 4                         
+         Supported data rate(s):  16 Gbps, 10 Gbps, 8 Gbps, 4 Gbps  
+         Link length:             Short                             
+         Connector:               LC                                
+         Transmitter type:        Shortwave Laser w/o OFC           
+         Transmission media:      TM Multi-mode 62.5m(M6)           
+         IEEE company ID:         00 17 6a                          
+         Revision:                Not Available                     
+         Part number:             AFBR-57F5UMZ-EP1                  
+         Serial number:           AC1510J05NY                       
+         Vendor:                  AVAGO                             
+         Date of manufacture:     7 לאנעא 2015 ד.                   
+
+
+         SFP status:              Optimal                           
+         Attached to:             Host-side of controller B         
+         Location:                Channel 1                         
+         Supported data rate(s):  16 Gbps, 10 Gbps, 8 Gbps, 4 Gbps  
+         Link length:             Short                             
+         Connector:               LC                                
+         Transmitter type:        Shortwave Laser w/o OFC           
+         Transmission media:      TM Multi-mode 62.5m(M6)           
+         IEEE company ID:         00 17 6a                          
+         Revision:                Not Available                     
+         Part number:             AFBR-57F5UMZ-EP1                  
+         Serial number:           AC1510J05NW                       
+         Vendor:                  AVAGO                             
+         Date of manufacture:     7 לאנעא 2015 ד.                   
+
+
+         SFP status:              Optimal                           
+         Attached to:             Host-side of controller B         
+         Location:                Channel 2                         
+         Supported data rate(s):  16 Gbps, 10 Gbps, 8 Gbps, 4 Gbps  
+         Link length:             Short                             
+         Connector:               LC                                
+         Transmitter type:        Shortwave Laser w/o OFC           
+         Transmission media:      TM Multi-mode 62.5m(M6)           
+         IEEE company ID:         00 17 6a                          
+         Revision:                Not Available                     
+         Part number:             AFBR-57F5UMZ-EP1                  
+         Serial number:           AC1510J05NU                       
+         Vendor:                  AVAGO                             
+         Date of manufacture:     7 לאנעא 2015 ד.                   
+
+
+         SFP status:              Optimal                           
+         Attached to:             Host-side of controller B         
+         Location:                Channel 3                         
+         Supported data rate(s):  16 Gbps, 10 Gbps, 8 Gbps, 4 Gbps  
+         Link length:             Short                             
+         Connector:               LC                                
+         Transmitter type:        Shortwave Laser w/o OFC           
+         Transmission media:      TM Multi-mode 62.5m(M6)           
+         IEEE company ID:         00 17 6a                          
+         Revision:                Not Available                     
+         Part number:             AFBR-57F5UMZ-EP1                  
+         Serial number:           AC1510J05NT                       
+         Vendor:                  AVAGO                             
+         Date of manufacture:     7 לאנעא 2015 ד.                   
+
+
+         SFP status:              Optimal                           
+         Attached to:             Host-side of controller B         
+         Location:                Channel 4                         
+         Supported data rate(s):  16 Gbps, 10 Gbps, 8 Gbps, 4 Gbps  
+         Link length:             Short                             
+         Connector:               LC                                
+         Transmitter type:        Shortwave Laser w/o OFC           
+         Transmission media:      TM Multi-mode 62.5m(M6)           
+         IEEE company ID:         00 17 6a                          
+         Revision:                Not Available                     
+         Part number:             AFBR-57F5UMZ-EP1                  
+         Serial number:           AC1510J05NX                       
+         Vendor:                  AVAGO                             
+         Date of manufacture:     7 לאנעא 2015 ד.                   
+
+
+
+ Power-Fan Canisters Detected:  2
+
+
+
+         Power-fan canister (Left) status:  Optimal          
+         Part number:                       PN 42883-32      
+         Serial number:                     SN AAMT15113700  
+         Vendor:                            VN LSI           
+         Date of manufacture:               1 לאנעא 2015 ד.  
+
+
+         Power-fan canister (Right) status:  Optimal          
+         Part number:                        PN 42883-32      
+         Serial number:                      SN AAMT15113714  
+         Vendor:                             VN LSI           
+         Date of manufacture:                1 לאנעא 2015 ד.  
+
+
+       Power Supplies Detected:  2
+
+
+
+               Power supply status:  Optimal          
+               Location:             Left             
+               Part number:          PN 42883-32      
+               Serial number:        SN AAMT15113700  
+               Vendor:               VN LSI           
+               Date of manufacture:  1 לאנעא 2015 ד.  
+
+
+               Power supply status:  Optimal          
+               Location:             Right            
+               Part number:          PN 42883-32      
+               Serial number:        SN AAMT15113714  
+               Vendor:               VN LSI           
+               Date of manufacture:  1 לאנעא 2015 ד.  
+
+
+
+       Fans Detected:  4
+
+
+
+               Fan Status:  Optimal  
+               Location:    Left     
+
+
+               Fan Status:  Optimal  
+               Location:    Left     
+
+
+               Fan Status:  Optimal  
+               Location:    Right    
+
+
+               Fan Status:  Optimal  
+               Location:    Right    
+
+
+
+
+ Temperature Sensors Detected:  8
+
+
+
+         Temperature sensor status:  Optimal            
+         Location:                   Tray 99, Sensor 1  
+
+
+         Temperature sensor status:  Optimal            
+         Location:                   Tray 99, Sensor 2  
+
+
+         Temperature sensor status:  Optimal               
+         Location:                   Controller A, Slot 2  
+
+
+         Temperature sensor status:  Optimal               
+         Location:                   Controller A, Slot 1  
+
+
+         Temperature sensor status:  Optimal               
+         Location:                   Controller B, Slot 2  
+
+
+         Temperature sensor status:  Optimal               
+         Location:                   Controller B, Slot 1  
+
+
+         Temperature sensor status:  Optimal                    
+         Location:                   Power-fan canister (Left)  
+
+
+         Temperature sensor status:  Optimal                     
+         Location:                   Power-fan canister (Right)  
+
+
+
+

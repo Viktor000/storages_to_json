@@ -1,0 +1,18 @@
+Value Disk_Id (Tray \d+, Drawer \d+, Slot \d+)
+Value Home (\S+)
+Value Model (\S+)
+Value Size ([\d,]+)
+Value Status (\S+)
+Value Serial ([\d\w]+)
+Value Type (\S+)
+Value Usablesize (\d+)
+Value Vendor ([\d\w]+)
+
+Start
+ ^\s+Drive at ${Disk_Id}
+ ^\s+Status:\s+${Status}
+ ^\s+Raw capacity:\s+${Size} GB
+ ^\s+Product ID:\s+${Model}
+ ^\s+Serial number:\s+${Serial}
+ ^\s+Interface type:\s+${Type}
+ ^\s+Manufacturer:\s+${Vendor} -> Record

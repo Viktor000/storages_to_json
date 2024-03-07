@@ -1,6 +1,13 @@
-Value id (\d+)
+Value id ([\d\.]+)
 Value model (\S+)
 Value sn (\S+)
 
 Start
- ^\S+\s+${id}\s+${model}\s+${sn} -> Record
+ ^shelf\s+shelf-id\s+product-id\s+serial-number -> TYPE1
+ ^node\s+shelf\s+shelf-id\s+product-id\s+serial-number -> TYPE2
+
+TYPE1
+ ^${id}\s+\S+\s+${model}\s+${sn} -> Record
+
+TYPE2
+ ^\S+\s+${id}\s+\S+\s+${model}\s+${sn} -> Record

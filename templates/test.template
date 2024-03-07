@@ -1,5 +1,14 @@
-Value ID (\d+)
-Value Hop (\d+(\.\d+){3})
+Value shelf ([\d\.]+)
+Value type (\S+)
+Value partNum (\S+)
+Value sn (\S+)
 
 Start
-  ^\s+${ID}\s+${Hop} -> Record
+ ^shelf\s+shelf-id\s+psu-type\s+psu-part-number\s+psu-serial-number -> TYPE1
+ ^node\s+shelf\s+shelf-id\s+psu-type\s+psu-part-number\s+psu-serial-number -> TYPE2
+ 
+TYPE1
+ ^${shelf}\s+\S+\s+${type}\s+${partNum}\s+${sn} -> Record
+
+TYPE2
+ ^\S+\s+${shelf}\s+\S+\s+${type}\s+${partNum}\s+${sn} -> Record

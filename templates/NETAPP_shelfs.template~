@@ -1,0 +1,6 @@
+Value id ([\d\.]+)
+Value model (\S+)
+Value sn (\S+)
+
+Start
+ ^\S+\s+${id}\s+${model}\s+${sn} -> Record

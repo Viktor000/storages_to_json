@@ -16,14 +16,16 @@ import pexpect
 from textfsm import clitable
 logger = logging.getLogger(__name__)
 class VNX(Storage):
-    def __init__(self, address, vendor, model,access_type,json_file_path='./'):
+    def __init__(self, address, vendor, model,access_type,username,password,json_file_path='./'):
         super().__init__(address, vendor, model,access_type,json_file_path)
+        self.username=username
+        self.password=password
         if access_type=='CLI':
             if (platform.system() == "Windows"):
                 self.util='naviseccli'
             else:
                 self.util='/opt/Navisphere/bin/naviseccli'
-            self.connect_args=f'-h {self.address}'
+            self.connect_args=f'-h {self.address} -User {self.username} -Password {self.password} -Scope 0'
             self.connect_string=f'{self.util} {self.connect_args}'
             self.cli_table = clitable.CliTable('index', 'templates')
         elif access_type=='API':
@@ -31,6 +33,7 @@ class VNX(Storage):
             exit()
       
     def __get_data_CLI__(self,command):
+        logger.debug(f'EMC VNX {self.address} {self.access_type} send command: {command}')
         if (platform.system() == "Windows"):
             conn=pexpect.popen_spawn.PopenSpawn(f'{self.connect_string} {command}')
         else:
@@ -79,13 +82,17 @@ class VNX(Storage):
         psu_list={}
         self.cli_table.ParseCmd(cmd_input=self.__get_data_CLI__(attributes['Command']),attributes=attributes)
         data_rows = [list(row) for row in self.cli_table]
+        count=0
         for row in data_rows:
             psu=Psu(
                 sn=row[3],
                 partNum=row[2],
                 type=row[1]
             )
-            psu_list[row[0]]=psu.exportData()
+            if str(count) not in psu_list:
+                psu_list[str(count)]={}
+            psu_list[str(count)][row[3]]=psu.exportData()
+            count+=1
         return psu_list
     
     
@@ -94,14 +101,17 @@ class VNX(Storage):
         shelf_list={}
         self.cli_table.ParseCmd(cmd_input=self.__get_data_CLI__(attributes['Command']),attributes=attributes)
         data_rows = [list(row) for row in self.cli_table]
+        count=0
         for row in data_rows:
             shelf=Shelf(
-                shelf_id=row[0],
+                #shelf_id=row[0],
+                shelf_id=str(count),
                 model=row[1],
                 sn=row[3],
                 partNum=row[2]
             )
-            shelf_list[row[0]]=shelf.exportData()
+            shelf_list[str(count)]=shelf.exportData()
+            count+=1
         return shelf_list
     
     def __get_controllers_CLI__(self):
@@ -114,7 +124,8 @@ class VNX(Storage):
                 id=row[0],
                 model=row[1],
                 sn=row[3],
-                partNum=row[2]
+                partNum=row[2],
+                node=row[0]
             )
             controllers_list[row[0]]=controller.exportData()
         return controllers_list
