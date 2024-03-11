@@ -25,29 +25,36 @@ class Hitachi(Storage):
         if access_type=='API':
             self.headers={}
             self.basic = HTTPBasicAuth(self.username,self.password)
-            self.auth='https://{self.address}/ConfigurationManager/v1/objects/sessions'
-            self.connect_args=f'https://{self.address}/ConfigurationManager/v1/objects/'
+            self.auth=f'http://{self.address}/ConfigurationManager/v1/objects/sessions'
+            self.connect_args=f'http://{self.address}/ConfigurationManager/v1/objects/'
             try:
+                #print(self.auth)
                 response = requests.post(self.auth,verify=False,headers=self.headers,auth=self.basic)
+                #print(response.json())
                 self.token=response.json()['token']
                 self.headers={'Authorization':f'Session {self.token}'}
             except Exception as e:
+                #print('------------------------------------')
                 print(e)    
                 
             try:
                 response = requests.get(self.connect_args+'storages',verify=False,headers=self.headers)
                 data=response.json()['data']
+                #print('=========',response.json())
                 for dev in data:
-                    if dev['svpIp']==self.address:
-                        self.storageId=dev['storageDeviceId']
-                        self.connect_args=f'{self.connect_args}storages/{self.storageId}/'
-                        break
+                    #print(dev)
+                    #if dev['svpIp']==self.address:
+                    self.storageId=dev['storageDeviceId']
+                    self.connect_args=f'{self.connect_args}storages/{self.storageId}/'
+                        #break
             except Exception as e:
-                print(e)    
+                print(e) 
             
     def __get_data_API__(self,url):
         try:
             response = requests.get(url,verify=False,headers=self.headers)
+            #print(url)
+            #print(response)
             return(response.json())
         except Exception as e:
             print(e)     
@@ -56,14 +63,20 @@ class Hitachi(Storage):
         url=f'{self.connect_args}drives'
         data=self.__get_data_API__(url)['data']
         hdd_list={}
+        
         for disk in data:
+            #print(disk)
+            if 'parityGroupId' in disk:
+                grpid=disk['parityGroupId']
+            else:
+                grpid=None
             drive=Drive(
                     slot=disk['driveLocationId'],
                     model=disk['driveType'],
                     size=round(float(disk['totalCapacity']/1000),2),
                     type=disk['driveTypeName'],
                     status=disk['status'],
-                    node=disk['parityGroupId']
+                    node=grpid
                     )
             disks_info=drive.exportData()
             if disks_info:

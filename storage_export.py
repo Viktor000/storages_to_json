@@ -1,6 +1,7 @@
 from models.netapp import NetApp
 from models.vnx import VNX
 from models.netapp_e import NetAppE
+from models.hitachi import Hitachi
 from models.base.storage import Storage
 import logging
 import time
@@ -15,6 +16,7 @@ logging.basicConfig(level=logging.DEBUG, filename="py_log.log",filemode="w",
                     format="%(asctime)s %(levelname)s %(module)s - %(message)s")
 
 netapp_e='./e_series/n5001_E5600_1RF13_08_1_inside.txt'
+netapp_e='10.161.80.103'
 storage_name='10.161.100.251'
 ip='10.164.1.66'
 user_emc=os.environ.get('USERNAME_EMC')
@@ -30,6 +32,8 @@ def job(device):
         dev= VNX(device[0],device[1],device[2],device[3],device[4],device[5])
     if device[1]=='NetApp' and 'E-series' in device[2]:
         dev= NetAppE(device[0],device[1],device[2],device[3],device[4],device[5])
+    if device[1]=='Hitachi' and 'VSP' in device[2]:
+        dev= Hitachi(device[0],device[1],device[2],device[3],device[4],device[5])
     dev.collectData()
     dev.exportDataToFile()
 
@@ -37,11 +41,11 @@ def job(device):
 if __name__ == '__main__':
     storage_list=[]
     device_list=[]
-    device_list.append([storage_name,'EMC', 'VNX5600','CLI',user_emc,password_emc])
-    device_list.append([ip,'NetApp','AFF','API',username,password])
-    device_list.append([ip,'NetApp','FAS','CLI',username,password])
-    device_list.append([netapp_e,'NetApp','E-series','CLI_file',username,password])
-    
+    # device_list.append([storage_name,'EMC', 'VNX5600','CLI',user_emc,password_emc])
+    # device_list.append([ip,'NetApp','AFF','API',username,password])
+    # device_list.append([ip,'NetApp','FAS','CLI',username,password])
+    #device_list.append([netapp_e,'NetApp','E-series','API',username,password])
+    device_list.append([netapp_e,'Hitachi','VSP F600','API',username,password])
     pool = ThreadPool(8)
     result=pool.map(job,device_list)
 
