@@ -38,9 +38,9 @@ if __name__ == '__main__':
     storage_list=[]
     device_list=[]
     device_list.append([storage_name,'EMC', 'VNX5600','CLI',user_emc,password_emc])
-    #device_list.append([ip,'NetApp','AFF','API',username,password])
-    #device_list.append([ip,'NetApp','FAS','CLI',username,password])
-    # device_list.append([netapp_e,'NetApp','E-series','CLI_file',username,password])
+    device_list.append([ip,'NetApp','AFF','API',username,password])
+    device_list.append([ip,'NetApp','FAS','CLI',username,password])
+    device_list.append([netapp_e,'NetApp','E-series','CLI_file',username,password])
     
     pool = ThreadPool(8)
     result=pool.map(job,device_list)

@@ -1,5 +1,5 @@
 class Drive():       
-    def __init__(self,slot,vendor,model,size,type,sn,partNum='',status='',node=''):
+    def __init__(self,slot,model,size,type,sn='',vendor='',partNum='',status='',node=''):
         self.slot=slot
         self.vendor=vendor
         self.model=model
@@ -13,15 +13,18 @@ class Drive():
     def exportData(self):
         disk_info={
             'slot':self.slot,
-            'vendor':self.vendor,
             'rawSize':self.size,
             'type':self.type,
-            'productId':self.model,
-            'sn':self.sn}
+            'productId':self.model}
+        if self.sn:
+            disk_info['sn']=self.sn
+        if self.vendor:
+            disk_info['vendor']=self.vendor
         if self.partNum:
             disk_info['partNum']=self.partNum 
         if self.status:
             disk_info['status']=self.status
         if self.node:
-            disk_info['node']=self.node                    
+            disk_info['node']=self.node    
+                        
         return disk_info
