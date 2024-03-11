@@ -1,5 +1,6 @@
 .env
 old/
+e_series/
 *.xlsx
 *.json
 
