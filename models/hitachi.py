@@ -83,6 +83,33 @@ class Hitachi(Storage):
                 hdd_list[disks_info['slot']]=disks_info
         return hdd_list
     
+    def __get_volumes_API__(self):
+        url=f'{self.connect_args}ldevs'
+        data=self.__get_data_API__(url)['data']
+        #print (data) 
+        list_volumes={}
+        for volume in data:
+            if volume['emulationType'] != 'NOT DEFINED':
+                str_size_G=re.match(r'([\d\.]+) G',volume['byteFormatCapacity'])
+                str_size_T=re.match(r'([\d\.]+) T',volume['byteFormatCapacity'])
+                #print(str_size_G,'----',str_size_T)
+                if str_size_G:
+                    size=round(float(str_size_G[1]),2)
+                else:
+                    size=round(float(str_size_T[1])*1024,2)
+                #size=round(float(re.match(r'[\d\.]+ T',volume['byteFormatCapacity'])[0])*1024,2)
+                vol=Volume(
+                    name=volume['ldevId'],
+                    size=size,
+                    state=volume['status']
+                )
+                vol_info=vol.exportData()
+                if vol_info:
+                    list_volumes[vol_info['name']]=vol_info
+        return list_volumes
+            #print(volume)
+            
+    
             
     def get_disks(self):
         return self.__get_disks_API__()   
@@ -103,4 +130,4 @@ class Hitachi(Storage):
         return super().get_psu()
     
     def get_volumes(self):
-        return super().get_volumes()
+        return self.__get_volumes_API__()

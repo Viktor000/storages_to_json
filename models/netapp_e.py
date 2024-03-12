@@ -59,19 +59,38 @@ class NetAppE(Storage):
             print(e)    
             
     def __get_disks_API__(self):
-        url=f'{self.connect_args}/drives'
+        url=f'{self.connect_args}/hardware-inventory'
         data=self.__get_data_API__(url)
-        #print(url)
-        #print(data)
+        data_drives=data['drives']
+        data_drawers=data['drawers']
+        data_shelfs=data['trays']
+        shelfs_info={}
+        drawers_info={}
+        
+        
+        for shelf in data_shelfs:
+            shelfs_info[shelf['trayRef']]=shelf['trayId']
+        for drawer in data_drawers:
+            drawers_info[drawer['drawerRef']]={'tray':drawer['physicalLocation']['trayRef'],
+                                               'name':drawer['physicalLocation']['label']}
+        
         hdd_list={}
-        for disk in data:
+        for disk in data_drives:
+            # print(shelfs_info[disk["physicalLocation"]["trayRef"]])
+            # print(drawers_info[disk["physicalLocation"]["locationParent"]["typedReference"]["symbolRef"]]["name"])
+            # print(disk["physicalLocation"]["label"])
+            
+            slot=f'{shelfs_info[disk["physicalLocation"]["trayRef"]]}.'\
+                 f'{drawers_info[disk["physicalLocation"]["locationParent"]["typedReference"]["symbolRef"]]["name"]}.'\
+                 f'{disk["physicalLocation"]["label"]}'
+            #print(slot)
             drive=Drive(
-                slot=disk['physicalLocation']['slot'],
+                slot=slot,
                 model=disk['productID'],
                 size=round(float(disk['rawCapacity'])/1000/1000/1000/1000,2),
-                type=disk['phyDriveType'],
-                sn=disk['serialNumber'],
-                vendor=disk['manufacturer'],
+                type=disk['phyDriveType'].upper(),
+                sn=disk['serialNumber'].strip(),
+                vendor=disk['manufacturer'].strip(),
                 status=disk['status']
                 )
             disks_info=drive.exportData()
@@ -89,7 +108,7 @@ class NetAppE(Storage):
             vol=Volume(
                 name=volume['name'],
                 size=round(float(volume['capacity'])/1000/1000/1000,2),
-                state=volume['status']
+                state=volume['status'].strip()
                 )
             volumes_info=vol.exportData()
             if volumes_info:
@@ -103,10 +122,11 @@ class NetAppE(Storage):
         list_controllers={} 
         for controller in data:
             contr=Controller(
-                id=controller['id'],
-                sn=controller['serialNumber'],
-                partNum=controller['partNumber'],
-                model=controller['modelName']
+                id=controller['id'].strip(),
+                sn=controller['serialNumber'].strip(),
+                partNum=controller['partNumber'].strip(),
+                model=controller['modelName'].strip(),
+                node=controller['physicalLocation']['label'].strip()
                 )
             controllers_info=contr.exportData()
             if controllers_info:
@@ -116,19 +136,43 @@ class NetAppE(Storage):
            
     def __get_psu_API__(self):
         url=f'{self.connect_args}/hardware-inventory'
-        data=self.__get_data_API__(url)['powerSupplies']
+        data=self.__get_data_API__(url)
+        data_psu=data['powerSupplies']
+        data_shelfs=data['trays']
+        shelfs_info={}
+
+        for shelf in data_shelfs:
+            shelfs_info[shelf['trayRef']]=str(shelf['trayId'])+'.'
+        
         list_psu={}
-        for psu in data:
+        for psu in data_psu:
+            shelf_id=shelfs_info[psu['physicalLocation']['trayRef']]
             psu=Psu(
-                sn=psu['serialNumber'],
-                partNum=psu['partNumber'],
-                type=psu['fruType']
+                sn=psu['serialNumber'].strip(),
+                partNum=psu['partNumber'].strip(),
+                type=psu['fruType'].strip()
                 )
             psus_info=psu.exportData()
             if psus_info:
-                list_psu[psus_info['sn']]=psus_info   
+                if shelf_id not in list_psu:
+                    list_psu[shelf_id]={}
+                list_psu[shelf_id][psus_info['sn']]=psus_info   
         return list_psu    
                 
+    def __get_shelfs_API__(self):
+        url=f'{self.connect_args}/hardware-inventory'
+        data=self.__get_data_API__(url)['trays']
+        list_shelfs={}
+        for shelf in data:
+            shelf=Shelf(
+                shelf_id=str(shelf['trayId'])+'.',
+                model=shelf['partNumber'].strip(),
+                sn=shelf['serialNumber'].strip()
+                )
+            shelfs_info=shelf.exportData()
+            if shelfs_info:
+                list_shelfs[shelfs_info['shelf_id']]=shelfs_info
+        return list_shelfs
                 
     def __get_networks_API__(self):
         url=f'{self.connect_args}/hardware-inventory'
@@ -140,10 +184,10 @@ class NetAppE(Storage):
                 network=network['ethernet']
                 #print (network)
                 net=Network(
-                    address=network['ipv4Address'],
-                    name=network['interfaceName'],
-                    netmask=network['ipv4SubnetMask'],
-                    node=controller['id']
+                    address=network['ipv4Address'].strip(),
+                    name=network['interfaceName'].strip(),
+                    netmask=network['ipv4SubnetMask'].strip(),
+                    node=controller['id'].strip()
                     )
                 networks_info=net.exportData()
                 if networks_info:
@@ -160,7 +204,7 @@ class NetAppE(Storage):
         return self.__get_controllers_API__()
     
     def get_shelfs(self):
-        return super().get_shelfs()
+        return self.__get_shelfs_API__()
     
     def get_luns(self):
         return super().get_luns()

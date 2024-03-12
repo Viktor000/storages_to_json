@@ -17,16 +17,17 @@ from urllib3.exceptions import InsecureRequestWarning
 urllib3.disable_warnings(InsecureRequestWarning)
 logger = logging.getLogger(__name__)
 
+result_file_path='/root/python_scripts/storage/result_data/'
 
 class Storage(ABC):
-    
-    def __init__(self,address,vendor,model,access_type,json_file_path='./'):
+    def __init__(self,address,vendor,model,access_type,json_file_name=''):
         self.vendor=vendor
         self.address=address
         self.model=model
         self.access_type=access_type
-        self.file_path=json_file_path
+        self.file_path=json_file_name
         self.startTime=time.time()
+        self.report={}
         logging.info(f"Storage {self.address} {self.vendor} {self.model} {self.access_type} is created")
         
     def collectData(self):
@@ -45,17 +46,20 @@ class Storage(ABC):
         }
         components = ['disks', 'luns', 'volumes', 'networks', 'shelfs', 'psu', 'controllers']
         for component in components:
+            size=0
             value = getattr(self, component)
             if value:
                 data[self.address][component] = value
+                size=len(value)
             else:
                 logging.info(f"{component.capitalize()} not found on {self.address}")
+            self.report[component]=size
         return json.dumps(data)
     
     
     def exportDataToFile(self):
-        filename=f'{self.model}_{self.address}_{self.access_type}.json'
-        file1 = open(self.file_path+filename, 'w')
+        #filename=f'{self.model}_{self.address}_{self.access_type}.json'
+        file1 = open(f'{result_file_path}{self.file_path}.json', 'w')
         file1.write(self.exportData())
         file1.close()
         logging.debug(f"Storage {self.address} {self.vendor} {self.model} {self.access_type} exported in {round(time.time()-self.startTime,2)} seconds")

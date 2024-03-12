@@ -1,5 +1,5 @@
 class Drive():       
-    def __init__(self,slot,model,size,type,sn='',vendor='',partNum='',status='',node=''):
+    def __init__(self,slot,model,size,type='',sn='',vendor='',partNum='',status='',node=''):
         self.slot=slot
         self.vendor=vendor
         self.model=model
@@ -14,8 +14,9 @@ class Drive():
         disk_info={
             'slot':self.slot,
             'rawSize':self.size,
-            'type':self.type,
             'productId':self.model}
+        if self.type:
+            disk_info['type']=self.type
         if self.sn:
             disk_info['sn']=self.sn
         if self.vendor:
